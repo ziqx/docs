@@ -4,14 +4,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Ziqx Docs',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Ziqx Documentation',
+  url: 'https://docs.ziqx.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Ziqx', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Ziqx Docs',
@@ -28,7 +28,7 @@ module.exports = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Ziqx/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -47,19 +47,24 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Connect Us',
           items: [
+          
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Twitter',
+              href: 'https://twitter.com/ziqx_cr',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/ziqx.cr/',
+            },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/ziqx_cr',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/ziqx_cr',
             },
           ],
         },
@@ -67,17 +72,21 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'Ziqx Home',
+              to: 'https://ziqx.in',
+            },
+            {
               label: 'Blog',
               to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Ziqx',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ziqx`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -92,7 +101,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/Ziqx/docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
