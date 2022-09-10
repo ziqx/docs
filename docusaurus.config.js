@@ -16,7 +16,7 @@ module.exports = {
     navbar: {
       title: 'Ziqx Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Ziqx',
         src: 'img/logo.svg',
       },
       items: [
