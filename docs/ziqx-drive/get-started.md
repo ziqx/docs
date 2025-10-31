@@ -20,7 +20,7 @@ Once enabled, you will be able to create and view apps in your dashboard.
 
 1. Navigate to the **Apps** section in your dashboard.
 2. Click on **Create App**.
-3. Provide the necessary details like **App Name** and **Description**.
+3. Provide the necessary details like **App Name** and **Type**.
 
 ## 3. Add Drives to Your App
 
@@ -34,7 +34,7 @@ Each app can have multiple drives, and each drive is billed separately. To add a
 
 ## 4. Understanding Pricing
 
-Pricing is based on storage (in GB) and includes a reasonable amount of bandwidth. Each drive you create will be billed according to its storage plan. Don’t worry, the bandwidth provided is designed to handle normal usage smoothly.
+Pricing is based on storage (in GB) and includes a reasonable amount of bandwidth. Each drive you create will be billed according to its storage plan.
 
 ## 5. Upload Files
 
