@@ -24,7 +24,25 @@ module.exports = {
           type: "doc",
           docId: "intro",
           position: "left",
-          label: "Tutorial",
+          label: "Getting Started",
+        },
+        {
+          type: "doc",
+          docId: "apps",
+          position: "left",
+          label: "Apps",
+        },
+        {
+          type: "doc",
+          docId: "z-auth",
+          position: "left",
+          label: "ZAuth",
+        },
+        {
+          type: "doc",
+          docId: "ziqx-drive",
+          position: "left",
+          label: "Drive",
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
