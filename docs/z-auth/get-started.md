@@ -7,6 +7,15 @@ Once you create an App, you can enable ZAuth for it directly from the dashboard.
 
 ---
 
+### Key Highlights
+
+- 🔐 **OAuth-based authentication** — industry-standard, secure, and reliable.
+- ⚙️ **Easy integration** — just one SDK call to add login to your app.
+- 🌍 **Environment-aware redirects** — separate Dev and Prod redirect URLs.
+- 👥 **User management dashboard** — view and manage your users effortlessly.
+- 🚀 **Multiple login methods** — Google, Email + OTP, Email + Password, WhatsApp, and more.
+- 🧩 **App-linked system** — enable ZAuth per app and manage access independently.
+
 ## 1. What Is ZAuth?
 
 ZAuth works as an OAuth-based authentication system similar to other identity providers (e.g., Google OAuth).  

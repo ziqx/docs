@@ -58,7 +58,7 @@ This separation allows you to organize resources for each project independently 
 - Files are uploaded via signed URLs for security.
 - A Drive secret is used to generate signed URLs securely.
 
-Read more about [Ziqx Drive](docs/ziqx-drive/get-started)
+Read more about [Ziqx Drive](/docs/ziqx-drive/get-started)
 
 ---
 
@@ -74,7 +74,7 @@ ZAuth securely redirects users to your app after login and provides you with ver
 
 > Build fast. Stay secure. Authenticate with ZAuth.
 
-Read more about [ZAuth](docs/z-auth/get-started)
+Read more about [ZAuth](/docs/z-auth/get-started)
 
 ---
 

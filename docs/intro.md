@@ -11,9 +11,9 @@ It brings together a suite of modular systems — each crafted to handle complex
 
 ---
 
-## 🚀 What Is ZIQX?
+## 🚀 What is ZIQX?
 
-ZIQX is more than just a set of APIs — it’s a complete ecosystem built for developers, startups, and digital creators.  
+ZIQX is an ecosystem built for developers, startups, and digital creators.  
 Every tool under ZIQX is designed to work independently yet integrate seamlessly with the others.
 
 From authentication and storage to future tools like payments, analytics, and content delivery — ZIQX provides everything your apps need, under one unified framework.
@@ -36,7 +36,7 @@ It allows developers to add secure and modern login flows to their apps without 
 
 ZAuth is fast, secure, and fully managed — you just enable it for your app and integrate a simple SDK call.
 
-👉 [Learn more about ZAuth](./zauth/introduction.md)
+👉 [Learn more about ZAuth](/docs/z-auth/get-started)
 
 ---
 
@@ -52,7 +52,7 @@ It offers an efficient and scalable way to store, retrieve, and manage your app�
 
 Drive is the perfect storage companion for your applications — reliable, developer-friendly, and built for scale.
 
-👉 [Learn more about Drive](./drive/get-started.md)
+👉 [Learn more about Drive](/docs/ziqx-drive/get-started)
 
 ---
 
@@ -74,7 +74,6 @@ ZIQX is expanding.
 Upcoming systems will include:
 
 - **ZPay** — Unified payment gateway and billing management
-- **ZEdge** — Global CDN and content acceleration
 - **ZAnalytics** — Real-time performance and usage tracking
 - **ZMail** — Transactional and marketing email delivery
 
