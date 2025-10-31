@@ -17,7 +17,7 @@ module.exports = {
       title: "Ziqx Docs",
       logo: {
         alt: "Ziqx",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
