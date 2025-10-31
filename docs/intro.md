@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Introduction
 
-# Welcome to ZIQX Docs
-
 ZIQX is a developer-first platform designed to simplify and accelerate how you build, host, and scale digital products.  
 It brings together a suite of modular systems — each crafted to handle complex infrastructure and logic behind the scenes, so you can focus purely on creation.
 
