@@ -1,4 +1,8 @@
-# ZAuth
+---
+sidebar_position: 3
+---
+
+# Getting Started
 
 ZAuth is a complete authentication system integrated into our platform.  
 It allows you to easily add secure, modern authentication to any App you create — without building your own auth backend.
