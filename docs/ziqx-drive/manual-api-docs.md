@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Generate Signed URL
+# Direct API Integration
 
 To securely upload files to your Drive, you first need to generate a signed URL. This page explains the process.
 
@@ -23,7 +23,7 @@ https://ziqx.cc/api/drive/sign-url?filename=[filename.jpg]
 
 - `filename`: Filename with extension.
 
-⚠️ NOTE: Filename must include the extension, else the uploaded file may appear corrupted. Best approach is to parse filename from the picked file. Eg: `red-apple.jpg`.
+⚠️ Note: Always include the file extension (e.g., .jpg, .png, .pdf). Omitting it may cause the uploaded file to appear broken. The easiest way is to use the name from the file selected by the user, for example: `red-apple.jpg`.
 
 > **Tip:** You can generate the secret in your dashboard. For security, periodically regenerate your secret.
 
