@@ -11,13 +11,19 @@ To securely upload files to your Drive, you first need to generate a signed URL.
 Send a **GET** request to:
 
 ```
-https://ziqx.cc/api/drive/sign-url
+https://ziqx.cc/api/drive/sign-url?filename=[filename.jpg]
 ```
 
 ### Required Headers
 
 - `x-drive-key`: Your Drive ID
 - `x-drive-secret`: Your secret
+
+### Required Query Params
+
+- `filename`: Filename with extension.
+
+⚠️ NOTE: Filename must include the extension, else the uploaded file may appear corrupted. Best approach is to parse filename from the picked file. Eg: `red-apple.jpg`.
 
 > **Tip:** You can generate the secret in your dashboard. For security, periodically regenerate your secret.
 
