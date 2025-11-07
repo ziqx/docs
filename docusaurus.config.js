@@ -28,19 +28,19 @@ module.exports = {
         },
         {
           type: "doc",
-          docId: "apps",
+          docId: "apps/get-started",
           position: "left",
           label: "Apps",
         },
         {
           type: "doc",
-          docId: "z-auth",
+          docId: "z-auth/get-started",
           position: "left",
           label: "ZAuth",
         },
         {
           type: "doc",
-          docId: "ziqx-drive",
+          docId: "ziqx-drive/get-started",
           position: "left",
           label: "Drive",
         },
