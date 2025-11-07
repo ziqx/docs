@@ -113,9 +113,9 @@ fileInput.addEventListener("change", async () => {
 
 ### ZDriveClient (Client-side)
 
-| Method                                      | Description                  | Parameters                                               | Returns                   |
-| ------------------------------------------- | ---------------------------- | -------------------------------------------------------- | ------------------------- |
-| `uploadFile(uploadUrl: string, file: File)` | Uploads a file to Ziqx Drive | `uploadUrl` — Signed URL<br>`file` — Browser File object | `Promise<UploadResponse>` |
+| Method                                      | Description                  | Parameters                                                | Returns                   |
+| ------------------------------------------- | ---------------------------- | --------------------------------------------------------- | ------------------------- |
+| `uploadFile(uploadUrl: string, file: File)` | Uploads a file to Ziqx Drive | `uploadUrl` — Signed URL<br/>`file` — Browser File object | `Promise<UploadResponse>` |
 
 ---
 
