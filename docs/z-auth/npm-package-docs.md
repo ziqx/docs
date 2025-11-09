@@ -84,7 +84,7 @@ auth.login(true); // For development mode
 
 ## ⚡ Manual Integration (Alternative)
 
-If you prefer to integrate manually without the SDK, see our [Manual Auth Implementation Guide](/docs/ziqx-auth/manual-api-docs).
+If you prefer to integrate manually without the SDK, see our [Manual Auth Implementation Guide](manual-api-docs).
 
 However, using the **@ziqx/auth** package is strongly recommended for easier maintenance and future updates.
 

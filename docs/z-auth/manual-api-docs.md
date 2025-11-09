@@ -67,7 +67,7 @@ You can directly include the following JavaScript code in your project to handle
 
 For cleaner code, TypeScript support, and easier updates, use the official npm package:
 
-### [See `@ziqx/auth` Docs](/docs/ziqx-auth/npm-package-docs)
+### [See `@ziqx/auth` Docs](npm-package-docs)
 
 ---
 
