@@ -49,6 +49,25 @@ This will automatically redirect the user to the ZIQX Auth page.
 
 ---
 
+## 🔐 Token Validation
+
+In addition to login, you can validate tokens issued by ZIQX using the `ZAuthTokenService`.
+
+```typescript
+import { ZAuthTokenService } from "@ziqx/auth";
+
+const tokenService = new ZAuthTokenService();
+const isValid = await tokenService.validate("your-jwt-token");
+
+if (isValid) {
+  console.log("✅ Token is valid");
+} else {
+  console.log("❌ Invalid or expired token");
+}
+```
+
+---
+
 ## 🧠 API Reference
 
 ### `class ZAuthClient`
@@ -82,6 +101,28 @@ auth.login(true); // For development mode
 
 ---
 
+### `class ZAuthTokenService`
+
+#### **Method: `validate(token: string): Promise<boolean>`**
+
+Validates a given authentication token with the ZIQX Auth API.
+
+**Parameters:**
+
+- `token` — The authentication token (JWT or similar) to validate.
+
+**Example:**
+
+```typescript
+const tokenService = new ZAuthTokenService();
+const isValid = await tokenService.validate("your-jwt-token");
+console.log("Token valid:", isValid);
+```
+
+Returns `true` if valid, otherwise `false`.
+
+---
+
 ## ⚡ Manual Integration (Alternative)
 
 If you prefer to integrate manually without the SDK, see our [Manual Auth Implementation Guide](manual-api-docs).
@@ -93,3 +134,5 @@ However, using the **@ziqx/auth** package is strongly recommended for easier mai
 ## 🧩 Notes
 
 - Ensure your app's callback URL is configured in your ZIQX Console.
+- Use `auth.login(true)` when developing locally or testing.
+- Always keep your `authKey` private.

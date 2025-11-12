@@ -63,6 +63,50 @@ You can directly include the following JavaScript code in your project to handle
 
 ---
 
+## 🔐 Token Validation (Manual Implementation)
+
+If you need to validate tokens manually without using the npm package, you can use the following function to verify tokens directly via the ZIQX API.
+
+```html
+<script>
+  /**
+   * Validates a ZIQX authentication token.
+   * @param {string} token - The token to validate.
+   * @returns {Promise<boolean>} - True if valid, false otherwise.
+   */
+  async function validateZiqxToken(token) {
+    if (!token) {
+      console.error("ZIQX Token Validation: Token is required.");
+      return false;
+    }
+
+    try {
+      const response = await fetch("https://ziqx.cc/api/auth/validate-token", {
+        method: "GET",
+        headers: {
+          Authorization: token,
+        },
+      });
+
+      if (response.status !== 200) return false;
+
+      const data = await response.json();
+      return data.success === true;
+    } catch (error) {
+      console.error("ZIQX Token Validation failed:", error);
+      return false;
+    }
+  }
+
+  // Example usage:
+  // const token = localStorage.getItem("ziqx_token");
+  // const isValid = await validateZiqxToken(token);
+  // console.log("Token valid:", isValid);
+</script>
+```
+
+---
+
 ## 💡 Recommended: Use the NPM Package
 
 For cleaner code, TypeScript support, and easier updates, use the official npm package:
@@ -74,5 +118,6 @@ For cleaner code, TypeScript support, and easier updates, use the official npm p
 ## 🧠 Summary
 
 - Get your **Auth Key** from the **ZIQX Console**.
-- Use the script snippet above for manual implementation.
-- For better maintainability, switch to **@ziqx/auth** npm package.
+- Use `ziqxLogin()` to start authentication.
+- Use `validateZiqxToken()` to validate tokens manually.
+- For better maintainability and TypeScript support, switch to **@ziqx/auth** npm package.
