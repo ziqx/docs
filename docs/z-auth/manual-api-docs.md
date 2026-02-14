@@ -31,17 +31,14 @@ You can directly include the following JavaScript code in your project to handle
 
   /**
    * Redirects user to ZIQX Auth login page.
-   * @param {boolean} [isDev=false] - Set true for development environment.
    */
-  function ziqxLogin(isDev = false) {
-    const devQuery = isDev ? "&dev=true" : "";
-    const loginUrl = `https://ziqx.cc/zauth?key=${AUTH_KEY}${devQuery}`;
+  function ziqxLogin() {
+    const loginUrl = `https://ziqx.cc/zauth?key=${AUTH_KEY}`;
     window.location.href = loginUrl;
   }
 
   // Example usage:
   // ziqxLogin();
-  // ziqxLogin(true); // For development environment
 </script>
 ```
 
@@ -53,12 +50,6 @@ You can directly include the following JavaScript code in your project to handle
 
 ```html
 <button onclick="ziqxLogin()">Login with ZIQX</button>
-```
-
-### Login Button (Development Mode)
-
-```html
-<button onclick="ziqxLogin(true)">Login (Dev Mode)</button>
 ```
 
 ---
@@ -81,7 +72,7 @@ If you need to validate tokens manually without using the npm package, you can u
     }
 
     try {
-      const response = await fetch("https://ziqx.cc/api/auth/validate-token", {
+      const response = await fetch("https://ziqx.cc/zauth/validate/", {
         method: "GET",
         headers: {
           Authorization: token,
@@ -99,7 +90,7 @@ If you need to validate tokens manually without using the npm package, you can u
   }
 
   // Example usage:
-  // const token = localStorage.getItem("ziqx_token");
+  // const token = cookies().get("ziqx_token");
   // const isValid = await validateZiqxToken(token);
   // console.log("Token valid:", isValid);
 </script>

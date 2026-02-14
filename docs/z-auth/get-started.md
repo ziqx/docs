@@ -34,7 +34,7 @@ By enabling ZAuth, your app can support multiple sign-in methods instantly — w
 1. Go to your **App** in the dashboard.
 2. Open the **ZAuth** section.
 3. Click **Enable ZAuth**.
-4. You’ll get a **Key** for authentication requests.
+4. You’ll get a **Key** and **Secret** for authentication requests.
 5. Set your **Development URL** and **Production URL**.
 
 ZAuth will use these URLs to redirect users back to your app after successful authentication, based on the environment you’re running.
@@ -45,8 +45,8 @@ ZAuth will use these URLs to redirect users back to your app after successful au
 
 1. In your app, call the provided **ZAuth SDK function** (e.g., `zauth.signIn()`).
 2. The user will be redirected to the **ZAuth authentication page**.
-3. After successful authentication, ZAuth will redirect the user back to your configured **Dev** or **Prod** URL.
-4. The redirect will include an **authorization token**, which can be used to verify and fetch user details from your backend.
+3. After successful authentication, ZAuth will redirect the user back to your configured redirect URL.
+4. The redirect will include an **authorization code**, which can be used to verify and fetch access token from your backend.
 
 This keeps your app secure while minimizing development time.
 
